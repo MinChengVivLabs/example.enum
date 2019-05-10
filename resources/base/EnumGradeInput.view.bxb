@@ -1,0 +1,20 @@
+input-view {
+  match: EnumGrade(this)
+  message(Which one ???)
+  render {
+    selection-of (this) {
+      where-each (item) {
+        title-card {
+          title-area {
+            slot1 {
+              text {
+                value: template ("#{value(item)}")
+                style (Title_S)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (ActionDisplayTimeInterval) {
+      accepted-inputs (dateTimeExpression)
+      local-endpoint ("DisplayTimeInterval.js")
+    }
+    action-endpoint (ActionDisplayGrade) {
+      accepted-inputs (grade)
+      local-endpoint ("DisplayGrade.js")
+    }
+    action-endpoint (ActionGetAllEnumGrade) {
+      accepted-inputs ()
+      local-endpoint ("GetAllEnumGrade.js")
+    }
+  }
+}

@@ -1,0 +1,16 @@
+action (ActionDisplayGrade) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+    input (grade) {
+      type (EnumGrade)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: ActionGetAllEnumGrade
+        }
+      }
+    }
+  }
+  output (TypeTxt)
+}

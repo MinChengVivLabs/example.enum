@@ -1,0 +1,11 @@
+action (ActionDisplayTimeInterval) {
+  description (__DESCRIPTION__)
+  type (Search)
+  collect {
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Required) max (One)
+    }
+  }
+  output (TypeTxt)
+}

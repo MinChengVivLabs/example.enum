@@ -1,0 +1,6 @@
+enum (EnumGrade) {
+  description (Credit grade)
+  symbol ("AAA+")
+  symbol ("AAA-")
+  symbol ("Junk")
+}

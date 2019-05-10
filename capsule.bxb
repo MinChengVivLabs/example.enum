@@ -1,0 +1,20 @@
+capsule {
+  id (example.enum)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  runtime-flags {
+    support-halt-effect-in-computed-inputs
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+  }
+  
+  capsule-imports {
+    import (viv.time) {
+      as (time)
+      version (2.57.42)
+    }
+  }
+}
